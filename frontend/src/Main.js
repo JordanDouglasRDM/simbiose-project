@@ -44,18 +44,6 @@ function Main() {
         return <Slide rouanetData={data}/>
     }
 
-    // return (
-    //     <div className="container">
-    //         {/*<Slide rouanetData={data}/>*/}
-    //         {errorCode === true ? (
-    //             // Renderiza o componente de erro se data estiver vazio
-    //             <PageError />
-    //         ) : (
-    //             // Renderiza o componente Slide com os dados se data não estiver vazio
-    //             <Slide rouanetData={data}/>
-    //         )}
-    //     </div>
-
 }
 
 export default Main;
