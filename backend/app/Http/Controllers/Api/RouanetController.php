@@ -7,12 +7,11 @@ use App\Http\Resources\RouanetResource;
 use App\Models\Rouanet;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use OpenApi\Annotations as OA;
 
 class RouanetController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index(): JsonResponse
     {
         try {

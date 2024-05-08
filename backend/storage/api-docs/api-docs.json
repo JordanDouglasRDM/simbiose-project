@@ -1,0 +1,87 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Documentation Simbiosi API",
+        "contact": {
+            "email": "jordandouglas8515@gmail.com"
+        },
+        "version": "0.1"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000/api/",
+            "description": "Server Default"
+        }
+    ],
+    "paths": {
+        "/rouanets": {
+            "get": {
+                "summary": "Listando os Rouanets (limitado a 25 registros)",
+                "description": "Para melhor renderização e agilidade no consumo da API, foi filtrado utilizando Resource,\n     *     somente os dados que serão utilizados no consumo da API. Como por exemplo, 'id_projeto', 'nome', 'uf', 'municipio',\n     *     'valor_captado', 'valor_aprovado', 'justificativa'. Você pode ver em App\\Http\\Resources\\RouanetResource.php",
+                "operationId": "900f7793391b85c272e3720529b3ec37",
+                "responses": {
+                    "200": {
+                        "description": "Operação Realizada com Sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id_projeto": {
+                                                        "description": "ID do projeto",
+                                                        "type": "integer",
+                                                        "example": 57030
+                                                    },
+                                                    "nome": {
+                                                        "description": "Nome do projeto",
+                                                        "type": "string",
+                                                        "example": "Circuito da Alegria 3"
+                                                    },
+                                                    "uf": {
+                                                        "description": "Unidade federativa",
+                                                        "type": "string",
+                                                        "example": "RS"
+                                                    },
+                                                    "municipio": {
+                                                        "description": "Município",
+                                                        "type": "string",
+                                                        "example": "Porto Alegre"
+                                                    },
+                                                    "valor_captado": {
+                                                        "description": "Valor captado",
+                                                        "type": "string",
+                                                        "example": "R$ 162.000,00"
+                                                    },
+                                                    "valor_aprovado": {
+                                                        "description": "Valor aprovado",
+                                                        "type": "string",
+                                                        "example": "R$ 183.237,60"
+                                                    },
+                                                    "justificativa": {
+                                                        "description": "Justificativa do projeto",
+                                                        "type": "string",
+                                                        "example": "A terceira edição do projeto Circuito da Alegria buscará repetir as boas parcerias..."
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "status": {
+                                            "description": "Código de status da resposta",
+                                            "type": "integer",
+                                            "example": 200
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
