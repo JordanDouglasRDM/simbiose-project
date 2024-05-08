@@ -16,13 +16,13 @@
     background-repeat: no-repeat;
 }
 .icon-background-left, .arrow-left {
-    left: 10px;
+    left: -26px;
     right: auto;
     z-index: 10;
 }
 .icon-background-right, .arrow-right {
     left: auto;
-    right: 10px;
+    right: -14px;
     z-index: 10;
 }
 
@@ -53,7 +53,6 @@
     background-image: url("../../public/assets/icons/arrow-left-solid.svg");
 }
 
-/* Ajustes para centralizar o ícone dentro do background */
 .icon-background-left i,
 .icon-background-right i {
     position: absolute;
@@ -70,6 +69,4 @@
 .swiper-pagination-bullet-active {
     background: #dee2e6 !important;
     border: 1px solid #dee2e6 !important;
-}
-.swiper-pagination {
 }

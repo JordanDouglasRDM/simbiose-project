@@ -15,7 +15,25 @@ function Slide(props) {
     return (
         <div className="Slide">
             <Swiper
-                slidesPerView={4}
+                breakpoints={{
+                    480: {
+                        width: 480,
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        width: 640,
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        width: 768,
+                        slidesPerView: 2,
+                    },
+                    1200: {
+                        width: 1200,
+                        slidesPerView: 3,
+                    }
+                }}
+
                 pagination={ pagination }
                 // pagination={{type: 'bullets', clickable: true}}
                 navigation={{nextEl: ".arrow-right", prevEl: ".arrow-left"}}
