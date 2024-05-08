@@ -1,0 +1,75 @@
+.Slide {
+    position: absolute;
+    width: 85%;
+    margin-left: 5%;
+    top: 5%;
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    width: 24px; /* Tamanho do ícone */
+    height: 24px; /* Tamanho do ícone */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.icon-background-left, .arrow-left {
+    left: 10px;
+    right: auto;
+    z-index: 10;
+}
+.icon-background-right, .arrow-right {
+    left: auto;
+    right: 10px;
+    z-index: 10;
+}
+
+.icon-background-left,
+.icon-background-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* Tamanho do background */
+    height: 50px; /* Tamanho do background */
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.icon-background-left:active,
+.icon-background-right:active {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #e5e5e5;
+}
+
+.arrow-right {
+    right: 10px;
+    background-image: url("../../public/assets/icons/arrow-right-solid.svg");
+}
+
+.arrow-left {
+    left: 10px;
+    background-image: url("../../public/assets/icons/arrow-left-solid.svg");
+}
+
+/* Ajustes para centralizar o ícone dentro do background */
+.icon-background-left i,
+.icon-background-right i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.swiper-pagination-bullet {
+    background: transparent !important;
+    border: 1px solid #000000 !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+.swiper-pagination-bullet-active {
+    background: #dee2e6 !important;
+    border: 1px solid #dee2e6 !important;
+}
+.swiper-pagination {
+}

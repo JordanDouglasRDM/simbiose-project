@@ -1,0 +1,114 @@
+/* Estilo geral do card */
+.card {
+    width: 100%;
+    height: 35%;
+    margin: 80px;
+    border: 0.5px solid #dedede;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Cabeçalho do card */
+.card-header {
+    margin-left: 1.5rem;
+}
+
+.card-header__title {
+    margin-top: 1rem;
+    display: inline-block;
+    position: relative;
+    color: #b28c48;
+    padding: 0.3rem 0.5rem;
+    background-color: #fff2db;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.card-header__subtitle {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.card-header__locale {
+    color: #848484;
+}
+
+.card-header__locale-item {
+    margin-right: 5px;
+}
+
+/* Corpo do card */
+.card-body {
+    color: #848484;
+    margin-left: 1.5rem;
+    height: 300px;
+
+}
+
+.card-body__description {
+    margin-right: 1.5em;
+    height: 175px;
+}
+
+.card-body__price {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-top: 2.5rem;
+}
+.raised {
+    margin-top: 1rem;
+}
+.approved,
+.raised {
+    font-size: 20px;
+    display: flex;
+}
+
+.approved-description,
+.raised-description {
+    width: 100px;
+    margin-right: 30px;
+}
+
+.approved-price,
+.raised-price {
+    font-weight: bold;
+}
+
+
+/* Rodapé do card */
+
+.card-footer {
+    display: flex;
+    margin: 1.5rem 0 1.5rem 1.5rem;
+    justify-content: space-between;
+}
+
+.add {
+    background-color: #f8f8f8;
+    color: #acacac;
+    border: none;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 18rem;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.add:hover {
+    background-color: #5a6268;
+    color: #ffffff;
+}
+
+.add:active {
+    background-color: #444d56;
+    color: #ffffff;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+}

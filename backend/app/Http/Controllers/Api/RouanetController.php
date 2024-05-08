@@ -16,7 +16,7 @@ class RouanetController extends Controller
     public function index(): JsonResponse
     {
         try {
-            $rouanets = RouanetResource::collection(Rouanet::take(10)->get());
+            $rouanets = RouanetResource::collection(Rouanet::take(25)->get());
 
             if (!$rouanets) {
                 throw new \Exception('Internal server error');
